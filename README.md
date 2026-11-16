@@ -54,6 +54,8 @@ The provider gets **200 only after the event is stored**. If PostgreSQL is down,
 
 ## 2. Architecture
 
+![n8n SMTP Relay Bounce and Complaint Feedback Loop Workflow Overview](./workflow-overview.png)
+
 ```mermaid
 flowchart TD
     A[SES SNS Webhook<br/>/feedback/ses] --> VA[Verify SNS Signature & Parse SES<br/>cert host · v1/v2 · topic allowlist]
